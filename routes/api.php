@@ -11,7 +11,5 @@ use App\Http\Controllers\InquiryController;
 
 Route::get('properties', [PropertyController::class, 'index']);
 Route::get('properties/{id}', [PropertyController::class, 'show']);
-
-
 Route::post('inquiries', [InquiryController::class, 'store']);
 

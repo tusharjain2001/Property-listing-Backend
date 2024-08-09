@@ -8,7 +8,7 @@ class PropertyController extends Controller
 {
     public function index(Request $request)
     {
-        $properties = Property::paginate(10); // Adjust pagination as needed
+        $properties = Property::paginate(4); // Adjust pagination as needed
         return response()->json($properties);
     }
 
